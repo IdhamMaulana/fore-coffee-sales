@@ -24,7 +24,7 @@ Project ini bertujuan untuk:
 4. Menghasilkan visualisasi data interaktif dan intuitif untuk mendukung pengambilan keputusan bisnis.
 
 ## 📂 Data Overview
-🔗 [Access Dataset](https://www.kaggle.com/datasets/jaspearson/pizzeria-data-for-4-weeks)
+🔗 ![Dataset](coffee_shop_sales.xlsx)
 
 Dataset simulasi mencakup riwayat transaksi harian yang terdiri dari:
 
@@ -43,7 +43,7 @@ Pendekatan yang dilakukan dalam projek ini difokuskan pada alur kerja Business I
 Dengan adanya dashboard interaktif ini, manajemen kedai kopi dapat memantau kesehatan finansial secara visual dan dinamis. Wawasan mengenai jam-jam sibuk (peak hours) sangat membantu dalam optimalisasi penugasan staf. Selain itu, pemahaman tentang lokasi gerai dengan performa tertinggi dan tren produk terlaris memungkinkan manajemen untuk merancang strategi promosi dan inventaris stok yang lebih akurat.
 
 ## 📊 Dashboard
-🔗 [View Interactive Dashboard](https://lookerstudio.google.com/reporting/7d1de712-b80c-46a6-aec2-6688fd871d65)
+🔗 ![Dashboard](fore_coffee_sales.pbix))
 
 Hasil analisis divisualisasikan dalam dashboard interaktif menggunakan Power BI:
 
@@ -54,5 +54,7 @@ Sales Dashboard:
 ## 🧰 Tools & Technologies
 - Power BI: Digunakan secara eksklusif untuk ETL (Power Query), Data Modeling, DAX, dan visualisasi dashboard.
 
-## 📌 Note
+## ⚠️ Disclaimer & Note
 Project ini merupakan dokumentasi portfolio data analyst yang berfokus pada penguasaan alat Business Intelligence (Power BI). Seluruh data yang digunakan bersifat simulasi untuk keperluan demonstrasi kemampuan visualisasi data dan perancangan dashboard analitik.
+
+**PENTING:** Seluruh data transaksi, metrik penjualan, dan informasi operasional yang ditampilkan di dalam *dashboard* ini adalah **data simulasi (dummy data)** yang disediakan khusus untuk keperluan demonstrasi tutorial. Data ini **BUKAN** merupakan data asli, data konfidensial, maupun representasi dari performa bisnis aktual milik Fore Coffee.
