@@ -55,6 +55,6 @@ Sales Dashboard:
 - Power BI: Digunakan secara eksklusif untuk ETL (Power Query), Data Modeling, DAX, dan visualisasi dashboard.
 
 ## ⚠️ Disclaimer & Note
-Project ini merupakan dokumentasi portfolio data analyst yang berfokus pada penguasaan alat Business Intelligence (Power BI). Seluruh data yang digunakan bersifat simulasi untuk keperluan demonstrasi kemampuan visualisasi data dan perancangan dashboard analitik.
+Project ini merupakan hasil implementasi dan pembelajaran dari panduan *Data Analyst Portfolio Project* di YouTube (karya Data Tutorials). Sebagai bentuk eksplorasi desain UI/UX, saya melakukan modifikasi pada antarmuka visual *dashboard* dengan mengadopsi tema dan identitas merek **Fore Coffee**.
 
 **PENTING:** Seluruh data transaksi, metrik penjualan, dan informasi operasional yang ditampilkan di dalam *dashboard* ini adalah **data simulasi (dummy data)** yang disediakan khusus untuk keperluan demonstrasi tutorial. Data ini **BUKAN** merupakan data asli, data konfidensial, maupun representasi dari performa bisnis aktual milik Fore Coffee.
