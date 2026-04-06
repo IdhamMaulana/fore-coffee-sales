@@ -24,7 +24,7 @@ Project ini bertujuan untuk:
 4. Menghasilkan visualisasi data interaktif dan intuitif untuk mendukung pengambilan keputusan bisnis.
 
 ## 📂 Data Overview
-🔗 ![Dataset](coffee_shop_sales.xlsx)
+🔗 [Coffee Shop Sales Dataset](https://github.com/IdhamMaulana/fore-coffee-sales/blob/main/coffee_shop_sales.xlsx)
 
 Dataset simulasi mencakup riwayat transaksi harian yang terdiri dari:
 
@@ -43,7 +43,7 @@ Pendekatan yang dilakukan dalam projek ini difokuskan pada alur kerja Business I
 Dengan adanya dashboard interaktif ini, manajemen kedai kopi dapat memantau kesehatan finansial secara visual dan dinamis. Wawasan mengenai jam-jam sibuk (peak hours) sangat membantu dalam optimalisasi penugasan staf. Selain itu, pemahaman tentang lokasi gerai dengan performa tertinggi dan tren produk terlaris memungkinkan manajemen untuk merancang strategi promosi dan inventaris stok yang lebih akurat.
 
 ## 📊 Dashboard
-🔗 ![Dashboard](fore_coffee_sales.pbix))
+🔗 [File Dashboard](https://github.com/IdhamMaulana/fore-coffee-sales/blob/main/fore_coffee_sales.pbix)
 
 Hasil analisis divisualisasikan dalam dashboard interaktif menggunakan Power BI:
 
