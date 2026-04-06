@@ -1,96 +1,59 @@
-# 🍕 Pizzeria Business Intelligence: SQL & Dashboard Project
-Relational Database Design, SQL Analysis, and Interactive Business Dashboard
-
-## 📓 SQL Scripts
-- [File Analysis](./file%20analysis/)
-
-Berisi seluruh kueri SQL yang digunakan untuk ekstraksi data, mulai dari kalkulasi total penjualan, manajemen stok (inventory), hingga perhitungan biaya staf.
+# ☕ Fore-Coffee Sales Analysis: Power BI Interactive Dashboard
+Data Modeling, DAX Calculations, and Interactive Business Dashboard
 
 ## 🧭 Business Context
-Ben sedang mengembangkan bisnis pizzeria dengan model takeout & delivery. Seiring dengan pertumbuhan operasional, Ben membutuhkan sistem backend yang terstruktur untuk mencatat seluruh aktivitas transaksi, serta sistem monitoring berbasis dashboard untuk memantau performa bisnis secara real-time.
+Sebuah jaringan kedai kopi membutuhkan sistem pemantauan yang komprehensif untuk mengevaluasi kinerja penjualan di berbagai lokasi. Pemilik bisnis ingin memahami pola pembelian pelanggan, mengidentifikasi produk terlaris, dan melihat fluktuasi transaksi berdasarkan hari serta jam operasional untuk mengoptimalkan ketersediaan produk dan jadwal operasional.
 
-Project ini berfokus pada pembangunan data pipeline end-to-end, mulai dari database ter-normalisasi hingga dashboard analitik, dengan tiga area utama:
+📊 Dashboard : Sales Analytics
+Berfokus pada visualisasi performa penjualan, metrik pertumbuhan, dan perilaku transaksi pelanggan.
 
-📊 Dashboard 1 : Order Activity
-Berfokus pada analisis performa penjualan dan perilaku pelanggan.
-
-- Total orders
-- Total sales
-- Total items sold
-- Average order value (AOV)
-- Sales by category
-- Top selling items
-- Orders by hour
-- Sales by hour
-- Orders by location (address)
-- Orders by fulfillment type (delivery vs pickup)
-     
-📦 Dashboard 2 : Inventory Management
-Berfokus pada efisiensi penggunaan bahan baku dan pengendalian biaya.
-
-- Total quantity usage per ingredient
-- Total cost per ingredient
-- Calculated cost per pizza
-- Remaining stock per ingredient
-  
-👨‍🍳 Dashboard 3 : Staff Cost
- Berfokus pada analisis produktivitas dan biaya tenaga kerja.
-
-- Total staff cost
-- Total hours worked
-- Hours worked per staff member
-- Cost per staff member
+Project ini berfokus pada pengembangan dashboard analitik end-to-end menggunakan Power BI:
+- Total sales, total orders, & total quantity sold
+- Month-on-Month (MoM) growth metrics
+- Calendar heat map untuk intensitas transaksi harian
+- Sales trends (Average line dinamis & komparasi Weekday vs Weekend)
+- Sales by days and hours (peta jam sibuk)
+- Sales by store location
+- Top 10 products & performa berdasarkan kategori
 
 ## 🎯 Project Objective
-
 Project ini bertujuan untuk:
-
-1. Membangun database ter-normalisasi sebagai fondasi data yang terstruktur dan scalable
-2. Mengembangkan dashboard analitik interaktif untuk memonitor KPI utama secara real-time
-3. Menghasilkan insight berbasis data untuk mendukung pengambilan keputusan operasional dan strategis
+1. Melakukan pembersihan dan transformasi data secara efisien menggunakan Power Query.
+2. Membangun model data (Data Modeling) yang solid dengan mendefinisikan relasi antar tabel (Fact & Dimension).
+3. Menggunakan formula DAX (Data Analysis Expressions) tingkat lanjut untuk menghitung KPI utama dan metrik time-intelligence.
+4. Menghasilkan visualisasi data interaktif dan intuitif untuk mendukung pengambilan keputusan bisnis.
 
 ## 📂 Data Overview
 🔗 [Access Dataset](https://www.kaggle.com/datasets/jaspearson/pizzeria-data-for-4-weeks)
 
-Dataset simulasi mencakup sistem relasional yang terdiri dari:
+Dataset simulasi mencakup riwayat transaksi harian yang terdiri dari:
 
-- Orders & Customers: Data transaksi, detail pelanggan, dan alamat pengiriman.
-- Inventory & Recipe: Detail bahan baku setiap menu (resep) dan level stok di gudang.
-- Staff & Shift: Informasi gaji per jam, jadwal kerja (rota), dan durasi shift.
+- Transaction Details: ID transaksi, tanggal, jam operasional, dan kuantitas pesanan.
+- Product Information: Kategori produk, nama produk, dan harga satuan.
+- Store Details: Lokasi cabang gerai kedai kopi.
 
 Data telah melalui proses:
 - Relational Mapping: Menentukan Primary Key dan Foreign Key antar tabel.
 
 ## 🔍 Analysis Approach
-Pendekatan yang dilakukan dalam projek ini meliputi:
-
-- Database Modeling: Merancang skema database menggunakan QuickDBD untuk memastikan integritas data.
-- SQL Data Transformation: Menggunakan kueri kompleks (Joins, Subqueries, dan Aggregations) untuk menghitung metrik bisnis dari berbagai tabel.
-- Stock Monitoring Logic: Mengalkulasi penggunaan bahan baku berdasarkan jumlah pesanan piza dikalikan dengan kuantitas resep.
-- Labor Cost Calculation: Menghitung biaya staf dengan mengekstrak durasi waktu (jam/menit) dari data shift dan mengalikannya dengan tarif per jam.
+Pendekatan yang dilakukan dalam projek ini difokuskan pada alur kerja Business Intelligence:
+- Data Preparation (Power Query): Membersihkan data mentah, mengubah tipe data, dan mengekstrak informasi waktu/hari dari kolom tanggal.
+- Data Modeling: Menyusun skema relasional antar tabel untuk memastikan interaksi antar filter (cross-filtering) dan visualisasi berfungsi dengan akurat.
+- DAX Calculations: Menulis measure kustom untuk menghitung performa bisnis, seperti pertumbuhan MoM, nilai rata-rata dinamis, dan kalkulasi logis lainnya.
+- Data Visualization & UI/UX: Mendesain antarmuka visual interaktif, termasuk pembuatan calendar heat map kustom menggunakan matriks dan grafik time-series.
 
 ## 💼 Business Impact
-Dengan adanya sistem ini, Ben dapat memantau kesehatan finansial pizzerianya secara akurat. Pengawasan stok yang otomatis membantu mengurangi limbah makanan (food waste) dan memastikan ketersediaan bahan, sementara pemantauan biaya staf memberikan gambaran yang jelas mengenai efisiensi operasional harian.
+Dengan adanya dashboard interaktif ini, manajemen kedai kopi dapat memantau kesehatan finansial secara visual dan dinamis. Wawasan mengenai jam-jam sibuk (peak hours) sangat membantu dalam optimalisasi penugasan staf. Selain itu, pemahaman tentang lokasi gerai dengan performa tertinggi dan tren produk terlaris memungkinkan manajemen untuk merancang strategi promosi dan inventaris stok yang lebih akurat.
 
 ## 📊 Dashboard
 🔗 [View Interactive Dashboard](https://lookerstudio.google.com/reporting/7d1de712-b80c-46a6-aec2-6688fd871d65)
 
-Hasil analisis divisualisasikan dalam dashboard interaktif (Looker Studio) yang terbagi menjadi tiga fokus utama:
+Hasil analisis divisualisasikan dalam dashboard interaktif menggunakan Power BI:
 
-Orders Dashboard:
-<img width="1136" height="854" alt="image" src="https://github.com/user-attachments/assets/9a189be9-d19d-4698-ae31-e201aed62cba" />
-
-
-Inventory Dashboard:
-<img width="1136" height="851" alt="image" src="https://github.com/user-attachments/assets/50d9746d-d075-4f1e-9eaf-e4ab71c73841" />
-
-Staff Dashboard:
-<img width="1136" height="856" alt="image" src="https://github.com/user-attachments/assets/53d00190-e64e-409e-94bd-63727753d6a7" />
+Sales Dashboard:
 
 ## 🧰 Tools & Technologies
-- QuickDBD: Untuk perancangan skema ERD (Entity Relationship Diagram).
-- SQL (Big Query): Untuk manajemen database dan pengolahan data.
-- Looker Studio: Untuk pembuatan dashboard interaktif.
+- Power BI: Digunakan secara eksklusif untuk ETL (Power Query), Data Modeling, DAX, dan visualisasi dashboard.
 
 ## 📌 Note
-Project ini merupakan hasil implementasi dari panduan Data Analyst Portfolio Project oleh Adam Finer. Seluruh data yang digunakan bersifat simulasi untuk keperluan demonstrasi kemampuan SQL-to-Dashboard pipeline.
+Project ini merupakan dokumentasi portfolio data analyst yang berfokus pada penguasaan alat Business Intelligence (Power BI). Seluruh data yang digunakan bersifat simulasi untuk keperluan demonstrasi kemampuan visualisasi data dan perancangan dashboard analitik.
